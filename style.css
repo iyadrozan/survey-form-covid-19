@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(172, 172, 172, 1) 100%);
+  z-index: -1;
+  background-size: cover;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.2s;
+}
+
+h1:hover {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.13);
+}
+
+p {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+form {
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.397);
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 25px;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  display: block;
+  margin-top: 10px;
+  height: 35px;
+  width: 100%;
+  border-radius: 10px;
+  border: transparent;
+  padding: 10px;
+  font-family: inherit;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  height: 30px;
+  width: 100%;
+  border: 0ch;
+  border-radius: 5px;
+  margin-top: 15px;
+}

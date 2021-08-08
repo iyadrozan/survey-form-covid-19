@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Survey Form Covid-19" />
+    <meta name="keywords" content="Covid, Covid-19, Form, Formulir, Gorontalo" />
+    <meta name="author" content="IyadRozan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Survey Covid-19 Gorontalo</title>
+  </head>
+  <body>
+    <!-- Title -->
+    <h1 id="title">Survey Covid-19 Gorontalo</h1>
+    <p id="description">Isi Formulir di Bawah ini Dengan Benar.</p>
+    <!-- Akhir Title -->
+    <!-- Form Label -->
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Nama
+        <input type="name" id="name" placeholder="Masukan Nama Kamu" required />
+      </label>
+
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Masukan Email Kamu" required />
+      </label>
+
+      <label for="number" id="number-label">
+        Umur
+        <input type="number" id="number" placeholder="Masukan Umur Kamu" required min="10" max="70" />
+      </label>
+
+      <label for="dropdown" id="dropdown-label">
+        Nama Kota/Kabupaten
+        <select type="dropdown" id="dropdown">
+          <option>Kota Gorontalo</option>
+          <option>Kabupaten Gorontalo</option>
+          <option>Kabupaten Bone Bolango</option>
+          <option>Kabupaten Boalemo</option>
+          <option>Kabupaten Gorontalo Utara</option>
+          <option>Kabupaten Pohuwato</option>
+        </select>
+      </label>
+
+      <label for="gender" id="gender-label">Pilih Jenis Kelamin Anda</label>
+
+      <input type="radio" name="gender" value="1" /> Laki-laki <input type="radio" name="gender" value="2" /> Perempuan <br />
+
+      <br />
+
+      <label for="pekerjaan" id="pekerjaan-label">Pilih Jenis Pekerjaan Anda</label>
+
+      <input type="checkbox" id="pekerjaan" value="pegawai-kantoran" />Pegawai Kantoran <input type="checkbox" id="pekerjaan" value="freelance" />Freelance <input type="checkbox" id="pekerjaan" value="pelajar-mahasiswa" />Pelajar/Mahasiswa
+
+      <br />
+      <br />
+      <label for="kritik-saran" id="kritik-saran">Kritik Dan Saran Anda Untuk Tenaga Kesehatan/Pemerintah</label>
+
+      <textarea name="kritik-saran" id="kritik-saran" cols="30" rows="10" placeholder="Tuliskan Kritik Dan saran anda untuk tenaga kesehatan/Pemerintah"></textarea>
+
+      <button id="submit" type="submit">Kirim</button>
+    </form>
+    <!-- Akhir Form Label -->
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
